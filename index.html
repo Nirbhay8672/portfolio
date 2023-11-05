@@ -39,6 +39,7 @@
             width:0%;
             max-width:max-content;
             overflow: hidden;
+            letter-spacing: .1em;
             height:inherit;
             word-break:break-all;
             animation:
@@ -60,6 +61,23 @@
         @keyframes m{
             100% {transform:translateY(-300%)}
         }
+
+        @media screen and (max-width: 800px)
+        {
+            .type span span {
+                overflow: hidden;
+                white-space: nowrap;
+                margin: 0 auto;
+                letter-spacing: .3em;
+                font-weight: bold;
+                animation:
+                    c 0.5s infinite steps(1),  
+                    t 2s linear infinite alternate,
+                    m 12s steps(3) infinite;
+                font-size: 18px;
+            }
+        }
+
     </style>
 </head>
 
