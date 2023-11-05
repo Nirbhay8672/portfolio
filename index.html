@@ -25,12 +25,48 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+        .type {
+            display:inline-block;
+        }
+        .type > span {
+            display:grid;
+            overflow: hidden;
+            height:1.2em;
+        }
+        .type span span {
+            width:0%;
+            max-width:max-content;
+            overflow: hidden;
+            height:inherit;
+            word-break:break-all;
+            animation:
+                c 0.5s infinite steps(1),  
+                t 2s linear infinite alternate,
+                m 12s steps(3) infinite;
+        }
+        .type span span:before {
+            content:" ";
+            display:inline-block;
+        }
+        @keyframes t{
+            90%,100% {width:100%}
+        }
+        @keyframes c{
+            0%,100%{box-shadow:2px 0 0 #0000}
+            50%    {box-shadow:2px 0 0 rgb(255, 242, 0)  }
+        }
+        @keyframes m{
+            100% {transform:translateY(-300%)}
+        }
+    </style>
 </head>
 
 <body>
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
-            <h1 class="logo me-auto"><a href="index.html">Nirbhay Hathaliya</a></h1>
+            <h5 class="text-white me-auto">nux</h5>
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -53,18 +89,26 @@
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <h1>Hi , I'm Nirbhay</h1>
-                    <h2>
-                        I'm full-stack web developer.
-                    </h2>
-                    <p class="text-white">
-                        a passionate web developer with a strong love for creating beautiful and functional websites. I've had the privilege of working on various projects and honing my skills.
-                    </p>
+                <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="50">
+                    <h1>Hi , I'm <span class="text-warning">Nirbhay</span></h1>
+                    <h1 class="type">
+                        <span>
+                            <span>Developer.</span>
+                            <span>Professional Coder.</span>
+                            <span>Full-stack web developer.</span>
+                        </span>
+                    </h1>
+                    <div class="row mt-3">
+                        <div class="col-lg-8">
+                            <p class="text-white">
+                                A passionate web developer with a strong love for creating beautiful and functional websites. I've had the privilege of working on various projects and honing my skills .
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="assets/img/my.png" class="img-fluid animated" alt="" style="height: 400px;" />
+                <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/img/my.png" class="img-fluid animated" alt="" style="max-width: 75% !important;"/>
                 </div>
             </div>
         </div>
@@ -81,6 +125,7 @@
                         <p class="text-center">
                             I specialize in designing and developing responsive, user-friendly websites and web applications. My goal is to transform ideas into seamless digital experiences that not only look great but also work flawlessly across different devices and browsers.
                         </p>
+                        
                     </div>
                 </div>
             </div>
@@ -94,79 +139,46 @@
                     </div>
                     <div
                         class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch order-2 order-lg-1">
-                        <div class="content">
-                            <ul>
-                                <li>
-                                    <i class="ri-check-double-line"></i>
-                                    <strong>Front-end Development :</strong>
-                                    <span>I'm proficient in HTML, CSS, JavaScript, Vue-Js, Alpine-Js. I focus on creating visually appealing and interactive user interfaces.</span>
-                                </li>
-                                <li>
-                                    <i class="ri-check-double-line"></i>
-                                    <strong>Back-end Development :</strong>
-                                    <span>I have expertise in server-side technologies.</span>
-                                </li>
-                                <li>
-                                    <i class="ri-check-double-line"></i>
-                                    <strong>Full Stack Development :</strong>
-                                    <span>I can bridge the gap between front-end and back-end, making sure every aspect of a project is well-coordinated.</span>
-                                </li>
-                                <li>
-                                    <i class="ri-check-double-line"></i>
-                                    <strong>Responsive Design :</strong>
-                                    <span>I'm committed to creating fast-loading websites with an emphasis on optimizing load times and overall performance.</span>
-                                </li>
-                            </ul>
-                        </div>
 
                         <div class="accordion-list">
                             <ul>
                                 <li>
                                     <a data-bs-toggle="collapse" class="collapse"
-                                        data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at
-                                        lectus urna
-                                        duis? <i class="bx bx-chevron-down icon-show"></i><i
+                                        data-bs-target="#accordion-list-1"><span>01</span> Front-end Development<i class="bx bx-chevron-down icon-show"></i><i
                                             class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                                         <p>
-                                            Feugiat pretium nibh ipsum consequat. Tempus iaculis
-                                            urna id volutpat lacus laoreet non curabitur gravida.
-                                            Venenatis lectus magna fringilla urna porttitor rhoncus
-                                            dolor purus non.
+                                            I'm proficient in HTML, CSS, JavaScript, Vue-Js, Alpine-Js. I focus on creating visually appealing and interactive user interfaces.
                                         </p>
                                     </div>
                                 </li>
-
                                 <li>
                                     <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2"
-                                        class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim
-                                        nunc? <i class="bx bx-chevron-down icon-show"></i><i
+                                        class="collapsed"><span>02</span> Back-end Development <i class="bx bx-chevron-down icon-show"></i><i
                                             class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                                         <p>
-                                            Dolor sit amet consectetur adipiscing elit pellentesque
-                                            habitant morbi. Id interdum velit laoreet id donec
-                                            ultrices. Fringilla phasellus faucibus scelerisque
-                                            eleifend donec pretium. Est pellentesque elit
-                                            ullamcorper dignissim. Mauris ultrices eros in cursus
-                                            turpis massa tincidunt dui.
+                                            I have expertise in server-side technologies.
                                         </p>
                                     </div>
                                 </li>
-
                                 <li>
                                     <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3"
-                                        class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing
-                                        elit? <i class="bx bx-chevron-down icon-show"></i><i
+                                        class="collapsed"><span>03</span> Full Stack Development <i class="bx bx-chevron-down icon-show"></i><i
                                             class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                                         <p>
-                                            Eleifend mi in nulla posuere sollicitudin aliquam
-                                            ultrices sagittis orci. Faucibus pulvinar elementum
-                                            integer enim. Sem nulla pharetra diam sit amet nisl
-                                            suscipit. Rutrum tellus pellentesque eu tincidunt.
-                                            Lectus urna duis convallis convallis tellus. Urna
-                                            molestie at elementum eu facilisis sed odio morbi quis
+                                            I can bridge the gap between front-end and back-end, making sure every aspect of a project is well-coordinated.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4"
+                                        class="collapsed"><span>04</span> Responsive Design <i class="bx bx-chevron-down icon-show"></i><i
+                                            class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                                        <p>
+                                            I'm committed to creating fast-loading websites with an emphasis on optimizing load times and overall performance.
                                         </p>
                                     </div>
                                 </li>
@@ -175,7 +187,7 @@
                     </div>
 
                     <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style="background-image: url('assets/img/why-us.png')" data-aos="zoom-in" data-aos-delay="150">
+                        style="background-image: url('https://static.vecteezy.com/system/resources/previews/011/153/360/original/3d-web-developer-working-on-project-illustration-png.png')" data-aos="zoom-in" data-aos-delay="150">
                         &nbsp;
                     </div>
                 </div>
@@ -191,13 +203,9 @@
                         <img src="assets/img/skills.png" class="img-fluid" alt="" />
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-                        <h3>
-                            Voluptatem dignissimos provident quasi corporis voluptates
+                        <h3 class="mb-5">
+                            Skill Power
                         </h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
 
                         <div class="skills-content">
                             <div class="progress">
@@ -957,19 +965,17 @@
                 &copy; Copyright <strong><span>Nux</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Nux-free-bootstrap-html-template-corporate/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by me</a>
             </div>
         </div>
     </footer>
     <!-- End Footer -->
 
     <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
