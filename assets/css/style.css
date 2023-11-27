@@ -382,19 +382,19 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Nux Section
 --------------------------------------------------------------*/
-#hero {
+#nux {
   width: 100%;
   height: 80vh;
   background: #37517e;
 }
 
-#hero .container {
+#nux .container {
   padding-top: 72px;
 }
 
-#hero h1 {
+#nux h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -402,13 +402,13 @@ h6 {
   color: #fff;
 }
 
-#hero h2 {
+#nux h2 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
   font-size: 24px;
 }
 
-#hero .btn-get-started {
+#nux .btn-get-started {
   font-family: "Jost", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -422,11 +422,11 @@ h6 {
   background: #47b2e4;
 }
 
-#hero .btn-get-started:hover {
+#nux .btn-get-started:hover {
   background: #209dd8;
 }
 
-#hero .btn-watch-video {
+#nux .btn-watch-video {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -436,7 +436,7 @@ h6 {
   line-height: 1;
 }
 
-#hero .btn-watch-video i {
+#nux .btn-watch-video i {
   line-height: 0;
   color: #fff;
   font-size: 32px;
@@ -444,56 +444,56 @@ h6 {
   margin-right: 8px;
 }
 
-#hero .btn-watch-video:hover i {
+#nux .btn-watch-video:hover i {
   color: #47b2e4;
 }
 
-#hero .animated {
+#nux .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 991px) {
-  #hero {
+  #nux {
     height: 100vh;
     text-align: center;
   }
 
-  #hero .animated {
+  #nux .animated {
     animation: none;
   }
 
-  #hero .hero-img {
+  #nux .nux-img {
     text-align: center;
   }
 
-  #hero .hero-img img {
+  #nux .nux-img img {
     width: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #nux h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #nux h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
-  #hero .hero-img img {
+  #nux .nux-img img {
     width: 70%;
   }
 }
 
 @media (max-width: 575px) {
-  #hero .hero-img img {
+  #nux .nux-img img {
     width: 80%;
   }
 
-  #hero .btn-get-started {
+  #nux .btn-get-started {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
   }
