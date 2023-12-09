@@ -25,59 +25,6 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <link href="assets/css/style.css" rel="stylesheet" />
-
-    <style>
-        .type {
-            display:inline-block;
-        }
-        .type > span {
-            display:grid;
-            overflow: hidden;
-            height:1.2em;
-        }
-        .type span span {
-            width:0%;
-            max-width:max-content;
-            overflow: hidden;
-            letter-spacing: .1em;
-            height:inherit;
-            word-break:break-all;
-            animation:
-                c 0.5s infinite steps(1),  
-                t 2s linear infinite alternate,
-                m 12s steps(3) infinite;
-        }
-        .type span span:before {
-            content:" ";
-            display:inline-block;
-        }
-        @keyframes t{
-            90%,100% {width:100%}
-        }
-        @keyframes c{
-            0%,100%{box-shadow:2px 0 0 #0000}
-            50%    {box-shadow:2px 0 0 rgb(255, 208, 0)  }
-        }
-        @keyframes m{
-            100% {transform:translateY(-300%)}
-        }
-
-        @media screen and (max-width: 1000px)
-        {
-            .type span span {
-                overflow: hidden;
-                white-space: nowrap;
-                margin: 0 auto;
-                font-weight: bold;
-                animation:
-                    c 0.5s infinite steps(1),  
-                    t 2s linear infinite alternate,
-                    m 12s steps(3) infinite;
-                font-size: 18px;
-            }
-        }
-
-    </style>
 </head>
 
 <body>
@@ -205,9 +152,7 @@
                 </div>
             </div>
         </section>
-        <!-- End Why Us Section -->
 
-        <!-- ======= Skills Section ======= -->
         <section id="skills" class="team">
             <div class="container" data-aos="fade-up">
                 <div class="row">
@@ -249,64 +194,41 @@
                 </div>
             </div>
         </section>
-        <!-- End Skills Section -->
 
-        <!-- ======= Services Section ======= -->
         <section id="services" class="services section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Services</h2>
                 </div>
-
-                <div class="row">
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="row gy-3">
+                    <div class="col-xl-3 col-md-6 text-center" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
                             <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                            <h4><a href="">Web Development</a></h4>
+                            <h4><a href="">Developing</a></h4>
                         </div>
                     </div>
-
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-                        data-aos-delay="200">
+                    <div class="col-xl-3 col-md-6 text-center" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-file"></i></div>
-                            <h4><a href="">Sed ut perspici</a></h4>
-                            <p>
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore
-                            </p>
+                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                            <h4><a href="">Quality</a></h4>
                         </div>
                     </div>
-
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
-                        data-aos-delay="300">
+                    <div class="col-xl-3 col-md-6 text-center" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-tachometer"></i></div>
-                            <h4><a href="">Magni Dolores</a></h4>
-                            <p>
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia
-                            </p>
+                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                            <h4><a href="">Design</a></h4>
                         </div>
                     </div>
-
-                    <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
-                        data-aos-delay="400">
+                    <div class="col-xl-3 col-md-6 text-center" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-layer"></i></div>
-                            <h4><a href="">Nemo Enim</a></h4>
-                            <p>
-                                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis
-                            </p>
+                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                            <h4><a href="">Creativity</a></h4>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Services Section -->
 
-        <!-- ======= Cta Section ======= -->
         <section id="cta" class="cta">
             <div class="container" data-aos="zoom-in">
                 <div class="row">
@@ -320,9 +242,7 @@
                 </div>
             </div>
         </section>
-        <!-- End Cta Section -->
 
-        <!-- ======= Team Section ======= -->
         <section id="team" class="team section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
@@ -369,11 +289,8 @@
                 </div>
             </div>
         </section>
-        <!-- End Team Section -->
     </main>
-    <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="footer-top">
             <div class="container">
@@ -448,7 +365,6 @@
             </div>
         </div>
     </footer>
-    <!-- End Footer -->
 
     <div id="preloader"></div>
 
@@ -456,7 +372,6 @@
         <i class="bi bi-arrow-up-short"></i>
     </a>
 
-    <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -465,7 +380,6 @@
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 </body>
 
