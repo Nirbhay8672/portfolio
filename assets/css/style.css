@@ -1119,9 +1119,7 @@ section {
 
 .team .member:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     background: #f6f6f6;
-    border: 1px solid #000000;
 }
 
 .team .member .member-info {
