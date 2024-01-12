@@ -1905,7 +1905,7 @@ section {
 }
 .slide-item{
     width:200px;
-    height:300px;
+    height:200px;
     background-position: 50% 50%;
     display: inline-block;
     transition: 0.8s;
@@ -1919,13 +1919,14 @@ section {
 }
 .slide-item:nth-child(1),
 .slide-item:nth-child(2){
+    margin-top: 3%;
     left:50px;
-    top:0;
+    top:30px;
     transform: translate(0,0);
     border-radius: 10px;
-    width:0px;
-    height:100%;
-    box-shadow: none;
+    width:60%;
+    height:40%;
+    box-shadow:rgba(0, 0, 0, 0.06);
 }
 .slide-item:nth-child(3){
     left:70%;
@@ -1942,9 +1943,9 @@ section {
 }
 .slide-item .content{
     position: absolute;
-    top:70%;
-    left:50px;
-    width:300px;
+    top:330px;
+    left:10px;
+    width:400px;
     padding:0;
     color:#000000;
     transform: translate(0,-50%);
