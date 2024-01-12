@@ -1899,9 +1899,9 @@ section {
     width:100%;
     margin-left: 10px;
     margin-right: 10px;
-    height:500px;
+    height:550px;
     background-color: #bebebe;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 #slide{
     width:max-content;
@@ -1912,7 +1912,7 @@ section {
     height:300px;
     background-position: 50% 50%;
     display: inline-block;
-    transition: 0.5s;
+    transition: 0.8s;
     background-size: cover;
     position: absolute;
     z-index: 1;
@@ -1923,11 +1923,11 @@ section {
 }
 .slide-item:nth-child(1),
 .slide-item:nth-child(2){
-    left:0;
+    left:50px;
     top:0;
     transform: translate(0,0);
-    border-radius: 0;
-    width:100%;
+    border-radius: 10px;
+    width:0px;
     height:100%;
     box-shadow: none;
 }
@@ -1946,10 +1946,9 @@ section {
 }
 .slide-item .content{
     position: absolute;
-    top:50%;
-    left:100px;
+    top:70%;
+    left:50px;
     width:300px;
-    text-align: left;
     padding:0;
     color:#000000;
     transform: translate(0,-50%);
@@ -1961,7 +1960,7 @@ section {
     z-index: 11111;
 }
 .slide-item .name{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     opacity: 0;
     animation:showcontent 1s ease-in-out 1 forwards
