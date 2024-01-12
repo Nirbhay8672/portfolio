@@ -1903,10 +1903,6 @@ section {
     background-color: #bebebe;
     border-radius: 20px;
 }
-#slide{
-    width:max-content;
-    margin-top:50px;
-}
 .slide-item{
     width:200px;
     height:300px;
@@ -2001,5 +1997,6 @@ section {
     border:1px solid #555;
     transition: 0.5s;
 }.buttons button:hover{
-    background-color: #bac383;
+    background-color: #000000;
+    color: white;
 }
