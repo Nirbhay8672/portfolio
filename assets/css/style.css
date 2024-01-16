@@ -1917,21 +1917,21 @@ section {
 
 .slide-item:nth-child(1),
 .slide-item:nth-child(2){
-    left:15px;
-    top:15px;
+    left:5px;
+    top:5px;
     transform: translate(0,0);
     border-radius: 10px;
     width:96%;
-    background-size: cover;
-    height:40%;
+    background-size:cover;
+    height:100%;
     box-shadow:rgba(0, 0, 0, 0.06);
 }
 
 @media screen and (max-width: 1000px) {
     .slide-item:nth-child(1),
     .slide-item:nth-child(2){
-        left:15px;
-        top:15px;
+        left:5px;
+        top:5px;
         transform: translate(0,0);
         border-radius: 10px;
         width:85%;
@@ -1957,7 +1957,7 @@ section {
 .slide-item .content{
     position: relative;
     top:330px;
-    left:10px;
+    left:5px;
     width: 100%;
     color:#000000;
     transform: translate(0,-50%);
