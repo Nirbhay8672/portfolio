@@ -1917,11 +1917,11 @@ section {
 
 .slide-item:nth-child(1),
 .slide-item:nth-child(2){
-    left:5px;
+    left:20%;
     top:5px;
     transform: translate(0,0);
     border-radius: 10px;
-    width:60%;
+    width:40%;
     background-size:cover;
     height:60%;
     box-shadow:rgba(0, 0, 0, 0.06);
