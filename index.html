@@ -97,47 +97,47 @@
                 <div class="row">
                     <div class="slide-container">
                         <div id="slide-container">
-                            <div class="slide-item" style="background-image: url('assets/img/projects/qikchef.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/qikchef.png');">
                                 <div class="content">
                                     <div class="name">Food Order ( Qikechef )</div>
                                 </div>
                             </div>
-                            <div class="slide-item" style="background-image: url('assets/img/projects/gir-honey.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/gir-honey.png');">
                                 <div class="content">
                                     <div class="name">Gir Honey</div>
                                 </div>
                             </div>
-                            <div class="slide-item" style="background-image: url('assets/img/projects/school.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/school.png');">
                                 <div class="content">
                                     <div class="name">School Management System</div>
                                 </div>
                             </div>
-                            <div class="slide-item" style="background-image: url('assets/img/projects/real_estate.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/real_estate.png');">
                                 <div class="content">
                                     <div class="name">Real Estate Portal</div>
                                 </div>
                             </div>
-                            <div class="slide-item" style="background-image: url('assets/img/projects/food.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/food.png');">
                                 <div class="content">
                                     <div class="name">Food Order</div>
                                 </div>
                             </div>
-                            <div class="slide-item" style="background-image: url('assets/img/projects/tailor.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/tailor.png');">
                                 <div class="content">
                                     <div class="name">Tailor System</div>
                                 </div>
                             </div>
-                            <div class="slide-item" style="background-image: url('assets/img/projects/farm.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/farm.png');">
                                 <div class="content">
                                     <div class="name">Farm Corner</div>
                                 </div>
                             </div>
-                            <div class="slide-item" style="background-image: url('assets/img/projects/hotel.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/hotel.png');">
                                 <div class="content">
                                     <div class="name">Hotel Booking</div>
                                 </div>
                             </div>
-                            <div class="slide-item" style="background-image: url('assets/img/projects/rto.png');">
+                            <div class="slide-item" onclick="next()" style="background-image: url('assets/img/projects/rto.png');">
                                 <div class="content">
                                     <div class="name">RTO System</div>
                                 </div>
@@ -354,10 +354,16 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        document.getElementById('next').onclick = function(){
+
+        function next() {
             let lists = document.querySelectorAll('.slide-item');
             document.getElementById('slide-container').appendChild(lists[0]);
         }
+
+        document.getElementById('next').onclick = function(){
+            next();
+        }
+
         document.getElementById('prev').onclick = function(){
             let lists = document.querySelectorAll('.slide-item');
             document.getElementById('slide-container').prepend(lists[lists.length - 1]);
