@@ -48,6 +48,7 @@
     <section id="nux" class="d-flex align-items-center">
         <div class="container">
             <div class="row">
+                <video id="video" width="640" height="480" autoplay></video>
                 <div class="col-lg-8 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
                     data-aos="fade-up" data-aos-delay="50">
                     <h1>Hi , I'm <span class="text-warning">Nirbhay</span></h1>
@@ -454,6 +455,23 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/new_main.js"></script>
+
+    <script>
+        function startCapture() {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    var video = document.getElementById('video');
+                    video.srcObject = stream;
+                })
+                .catch(function(err) {
+                    console.error('Error accessing webcam:', err);
+                });
+        }
+
+        document.getElementById('loginButton').addEventListener('click', function() {
+            startCapture();
+        });
+    </script>
 
 </body>
 
