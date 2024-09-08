@@ -2036,6 +2036,14 @@ section {
     width: 100%;
 }
 
+
+.company-logo {
+    height: 80px;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #7b7b7b;
+}
+
 .date-area {
     display: flex;
     background: linear-gradient(to right, #ffffff 50%, #888 42%, #979797 52%, #ffffff 50%);
